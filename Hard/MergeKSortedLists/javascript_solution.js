@@ -9,6 +9,37 @@
  * @param {ListNode[]} lists
  * @return {ListNode}
  */
+
+/**
+ * 解法二：迴圈找出節點陣列中最小的首個節點
+ */
+ var mergeKLists = function(lists) {
+    let rtnNode = null;
+    let nextNode = null;
+    while(!lists.every((node) => node === null) && lists.length > 0){
+        let minNode = lists[0];
+        let minIndex = 0;
+        lists.forEach((node, index) => {
+            if(node !== null && (minNode === null || minNode.val > node.val)){
+                minNode = node;
+                minIndex = index;
+            }
+        });
+        if(nextNode === null){
+            rtnNode = new ListNode(minNode.val);
+            nextNode = rtnNode;
+        }else{
+            nextNode.next = new ListNode(minNode.val);
+            nextNode = nextNode.next;
+        }
+        lists[minIndex] = lists[minIndex].next;
+    }
+    return rtnNode;
+};
+
+/**
+ * 解法一；迴圈讀取節點陣列，並逐個合併，效率較差。
+ */
  var mergeKLists = function(lists) {
     let rtnNode = null;
     for(let node of lists){

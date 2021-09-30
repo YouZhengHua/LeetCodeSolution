@@ -33,6 +33,8 @@ You are given an array of `k` linked-lists `lists`, each linked-list is sorted i
 * The sum of `lists[i].length` won't exceed `10^4`.
 
 ### 解題心得
-算是倆排序節點合併的衍生題，在外層多一個迴圈逐項讀取輸入項後再進行合併即可，惟執行效率仍有待改善。
+算是倆排序節點合併的衍生題。
+大概有兩種解法，一種是一次只讀取兩個節點進行合併，完成後再以合併完後的節點跟後續的節點逐個合併，此解法效率較差。
+另一種是找出當前所有首個節點的最小值，將最小節點的值增加至最後回傳的節點中，接著再將最小節點指向他的下一個節點，在重複此動作到陣列中所有節點都讀過一輪後即可，執行效率較高。
 
 ### Problems url: https://leetcode.com/problems/merge-k-sorted-lists/
