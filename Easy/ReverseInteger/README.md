@@ -26,4 +26,4 @@ Given a signed 32-bit integer `x`, return `x` *with its digits reversed*. If rev
 ### 解題心得
 將數字反轉後輸出，可將輸入數字轉為字串，字串反轉後再轉回數字進行輸出，須注意負數符號的存在。
 
-### Problems url: https://leetcode.com/problems/zigzag-conversion/
+### Problems url: https://leetcode.com/problems/reverse-integer/

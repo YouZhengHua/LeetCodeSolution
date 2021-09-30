@@ -27,6 +27,8 @@ Given `n` non-negative integers `a1, a2, ..., an` , where each represents a poin
 * `0 <= height[i] <= 10^4`
 
 ### 解題心得
+以直覺將兩兩數字相乘的暴力破解所得出的雙層巢狀迴圈會因為 O(n^2) 而超時，要使用演算法 Sliding Window 改寫成 O(n) 的形式才不會超時。
 
+參考資料: https://blog.techbridge.cc/2019/09/28/leetcode-pattern-sliding-window/
 
 ### Problems url: https://leetcode.com/problems/container-with-most-water/

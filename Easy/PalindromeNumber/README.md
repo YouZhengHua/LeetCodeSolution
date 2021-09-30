@@ -28,4 +28,4 @@ An integer is a **palindrome** when it reads the same backward as forward. For e
 ### 解題方向
 將數值轉為字串後再做回文判斷即可。
 
-### Problems url: https://leetcode.com/problems/two-sum/
+### Problems url: https://leetcode.com/problems/palindrome-number/
