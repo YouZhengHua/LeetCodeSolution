@@ -42,4 +42,4 @@ The matching should cover the **entire** input string (not partial).
 手動實作正則表示式的 isMatch() 判斷
 未完成，部份情況下會出錯。
 
-### Problems url: https://leetcode.com/problems/median-of-two-sorted-arrays/
+### Problems url: https://leetcode.com/problems/regular-expression-matching/
